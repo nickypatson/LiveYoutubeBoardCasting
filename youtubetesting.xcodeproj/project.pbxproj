@@ -14,6 +14,7 @@
 		E15EE6711F2F1217000C821B /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EE6701F2F1217000C821B /* LFLivePreview.m */; };
 		E15EE6761F2F1238000C821B /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EE6731F2F1238000C821B /* UIControl+YYAdd.m */; };
 		E15EE6771F2F1238000C821B /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EE6751F2F1238000C821B /* UIView+YYAdd.m */; };
+		E18CB4691F32E973003A6AC2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E18CB4681F32E973003A6AC2 /* README.md */; };
 		E18D32241F25C72A0097754B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D32231F25C72A0097754B /* Main.storyboard */; };
 		E1C4CB441F25C40400ADBD65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CB431F25C40400ADBD65 /* AppDelegate.m */; };
 		E1C4CB471F25C40400ADBD65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CB461F25C40400ADBD65 /* ViewController.m */; };
@@ -45,6 +46,7 @@
 		E15EE6731F2F1238000C821B /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
 		E15EE6741F2F1238000C821B /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
 		E15EE6751F2F1238000C821B /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		E18CB4681F32E973003A6AC2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		E18D32231F25C72A0097754B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E1C4CB3F1F25C40400ADBD65 /* youtubetesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youtubetesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C4CB421F25C40400ADBD65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		E1C4CB411F25C40400ADBD65 /* youtubetesting */ = {
 			isa = PBXGroup;
 			children = (
+				E18CB4681F32E973003A6AC2 /* README.md */,
 				E15EE6671F2EEA42000C821B /* listViewCOntrollerViewController.h */,
 				E15EE6681F2EEA42000C821B /* listViewCOntrollerViewController.m */,
 				E18D32231F25C72A0097754B /* Main.storyboard */,
@@ -297,6 +300,7 @@
 			files = (
 				E15EE66E1F2F11AD000C821B /* LiveViewController.m in Sources */,
 				E15EE6761F2F1238000C821B /* UIControl+YYAdd.m in Sources */,
+				E18CB4691F32E973003A6AC2 /* README.md in Sources */,
 				E1C4CB471F25C40400ADBD65 /* ViewController.m in Sources */,
 				E1C4CB521F25C40400ADBD65 /* main.m in Sources */,
 				E15EE6691F2EEA42000C821B /* listViewCOntrollerViewController.m in Sources */,

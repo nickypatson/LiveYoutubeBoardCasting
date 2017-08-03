@@ -7,7 +7,7 @@
 
 #import "YoutubeStreamingLayer.h"
 
-#define APIKEY @"AIzaSyBXh3tD5g8BekHeg0kIaL8Q2hkGUNp5IyM"
+#define APIKEY @""
 
 static YoutubeStreamingLayer *sharedInstance = nil;
 @implementation YoutubeStreamingLayer
