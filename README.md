@@ -1,4 +1,4 @@
-LiveYoutubeStreaming is a framework for creating live broadcasts and video streams on YouTube
+LiveYoutubeStreaming is a framework for creating live broadcasts and video streams on Youtube data API
 
 
 
