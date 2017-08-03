@@ -7,7 +7,7 @@
 
 #import "YoutubeStreamingLayer.h"
 
-
+#define APIKEY @"AIzaSyBXh3tD5g8BekHeg0kIaL8Q2hkGUNp5IyM"
 
 static YoutubeStreamingLayer *sharedInstance = nil;
 @implementation YoutubeStreamingLayer
@@ -86,7 +86,7 @@ static id extracted() {
     NSDictionary *parameters = @{ @"snippet": @{ @"title": @"nicky", @"scheduledStartTime":     @"2017-08-02T11:59:15+05:00", @"description": @"dsfsdfs" },
                                   @"status": @{ @"privacyStatus": @"public" } };
     
-    NSString *url = @"https://www.googleapis.com/youtube/v3/liveBroadcasts?part=id%2Csnippet%2CcontentDetails%2Cstatus&key=AIzaSyBXh3tD5g8BekHeg0kIaL8Q2hkGUNp5IyM";
+    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveBroadcasts?part=id,snippet,contentDetails,status&key=%@",APIKEY];
     
     [self makeApiRequestwith:url withParmaters:parameters withHeaders:headers Completion:^(BOOL success, NSDictionary *dict) {
         
@@ -112,7 +112,7 @@ static id extracted() {
                                 };
     
     
-    NSString *url = @"https://www.googleapis.com/youtube/v3/liveStreams?part=id,snippet,cdn,status&key=AIzaSyBXh3tD5g8BekHeg0kIaL8Q2hkGUNp5IyM";
+    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveStreams?part=id,snippet,cdn,status&key=%@",APIKEY];
     
     [self makeApiRequestwith:url withParmaters:parameters withHeaders:headers Completion:^(BOOL success, NSDictionary *dict) {
     
@@ -135,7 +135,7 @@ static id extracted() {
     
 
 
-    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveBroadcasts/bind?id=%@&streamId=%@&part=id,snippet,contentDetails,status&key=AIzaSyBXh3tD5g8BekHeg0kIaL8Q2hkGUNp5IyM",boardCastId,streamid];
+    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveBroadcasts/bind?id=%@&streamId=%@&part=id,snippet,contentDetails,status&key=%@",boardCastId,streamid,APIKEY];
     
 
     
@@ -159,7 +159,7 @@ static id extracted() {
                                @"Authorization": [NSString stringWithFormat:@"Bearer %@",tokenValue]};
     
     
-    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveBroadcasts?part=id,snippet,contentDetails,status&key=AIzaSyBXh3tD5g8BekHeg0kIaL8Q2hkGUNp5IyM&id=%@",broadCastId];
+    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveBroadcasts?part=id,snippet,contentDetails,status&key=%@&id=%@",APIKEY,broadCastId];
     
     
     [self makePutApiRequestwith:url withParmaters:@{} withHeaders:headers Completion:^(BOOL success, NSDictionary *dict1) {
@@ -169,7 +169,7 @@ static id extracted() {
             NSDictionary *headers = @{ @"Content-Type": @"application/json",
                                        @"Authorization": [NSString stringWithFormat:@"Bearer %@",tokenValue]};
             
-            NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveStreams?part=id,snippet,cdn,status&key=AIzaSyBXh3tD5g8BekHeg0kIaL8Q2hkGUNp5IyM&id=%@",streamIdValue];
+            NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveStreams?part=id,snippet,cdn,status&key=%@&id=%@",APIKEY,streamIdValue];
             
             
             [self makePutApiRequestwith:url withParmaters:@{} withHeaders:headers Completion:^(BOOL success, NSDictionary *dict2) {
@@ -196,7 +196,7 @@ static id extracted() {
                                @"Authorization": [NSString stringWithFormat:@"Bearer %@",tokenValue]};
 
     
-    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveBroadcasts/transition?part=id,snippet,contentDetails,status&key=AIzaSyBXh3tD5g8BekHeg0kIaL8Q2hkGUNp5IyM&id=%@&broadcastStatus=%@",broadCastId,status];
+    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveBroadcasts/transition?part=id,snippet,contentDetails,status&key=%@&id=%@&broadcastStatus=%@",APIKEY,broadCastId,status];
     
     
     [self makeApiRequestwith:url withParmaters:@{}
@@ -220,7 +220,7 @@ static id extracted() {
                                @"Authorization": [NSString stringWithFormat:@"Bearer %@",tokenValue]};
     
     
-  NSString *url = @"https://www.googleapis.com/youtube/v3/liveBroadcasts?broadcastStatus=upcoming&maxResults=50&part=id%2Csnippet%2CcontentDetails&key=AIzaSyBXh3tD5g8BekHeg0kIaL8Q2hkGUNp5IyM";
+    NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveBroadcasts?broadcastStatus=upcoming&maxResults=50&part=id,snippet,contentDetails&key=%@",APIKEY];
     
     
     
