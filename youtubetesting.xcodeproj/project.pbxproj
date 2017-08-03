@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9C580BB857E95CD9FD4D0A4 /* libPods-youtubetesting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6D7BA0F41881F35AF16E7A /* libPods-youtubetesting.a */; };
+		E15EE6691F2EEA42000C821B /* listViewCOntrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EE6681F2EEA42000C821B /* listViewCOntrollerViewController.m */; };
+		E15EE66B1F2EEDCE000C821B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E15EE66A1F2EEDCE000C821B /* GoogleService-Info.plist */; };
+		E15EE66E1F2F11AD000C821B /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EE66D1F2F11AD000C821B /* LiveViewController.m */; };
+		E15EE6711F2F1217000C821B /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EE6701F2F1217000C821B /* LFLivePreview.m */; };
+		E15EE6761F2F1238000C821B /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EE6731F2F1238000C821B /* UIControl+YYAdd.m */; };
+		E15EE6771F2F1238000C821B /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EE6751F2F1238000C821B /* UIView+YYAdd.m */; };
+		E18D32241F25C72A0097754B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18D32231F25C72A0097754B /* Main.storyboard */; };
 		E1C4CB441F25C40400ADBD65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CB431F25C40400ADBD65 /* AppDelegate.m */; };
 		E1C4CB471F25C40400ADBD65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CB461F25C40400ADBD65 /* ViewController.m */; };
-		E1C4CB4A1F25C40400ADBD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CB481F25C40400ADBD65 /* Main.storyboard */; };
 		E1C4CB4C1F25C40400ADBD65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CB4B1F25C40400ADBD65 /* Assets.xcassets */; };
-		E1C4CB4F1F25C40400ADBD65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CB4D1F25C40400ADBD65 /* LaunchScreen.storyboard */; };
 		E1C4CB521F25C40400ADBD65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CB511F25C40400ADBD65 /* main.m */; };
-		E1C4CB5C1F25C40500ADBD65 /* youtubetestingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CB5B1F25C40500ADBD65 /* youtubetestingUITests.m */; };
+		E1C4CB681F25C52F00ADBD65 /* YoutubeStreamingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CB661F25C52F00ADBD65 /* YoutubeStreamingLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +33,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F913C95A17251A68A172534 /* Pods-youtubetesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youtubetesting.release.xcconfig"; path = "Pods/Target Support Files/Pods-youtubetesting/Pods-youtubetesting.release.xcconfig"; sourceTree = "<group>"; };
+		E15EE6671F2EEA42000C821B /* listViewCOntrollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listViewCOntrollerViewController.h; sourceTree = "<group>"; };
+		E15EE6681F2EEA42000C821B /* listViewCOntrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listViewCOntrollerViewController.m; sourceTree = "<group>"; };
+		E15EE66A1F2EEDCE000C821B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E15EE66C1F2F11AD000C821B /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		E15EE66D1F2F11AD000C821B /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
+		E15EE66F1F2F1217000C821B /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
+		E15EE6701F2F1217000C821B /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
+		E15EE6721F2F1238000C821B /* UIControl+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YYAdd.h"; sourceTree = "<group>"; };
+		E15EE6731F2F1238000C821B /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
+		E15EE6741F2F1238000C821B /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
+		E15EE6751F2F1238000C821B /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		E18D32231F25C72A0097754B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E1C4CB3F1F25C40400ADBD65 /* youtubetesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youtubetesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C4CB421F25C40400ADBD65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1C4CB431F25C40400ADBD65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E1C4CB451F25C40400ADBD65 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E1C4CB461F25C40400ADBD65 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E1C4CB491F25C40400ADBD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1C4CB4B1F25C40400ADBD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E1C4CB4E1F25C40400ADBD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1C4CB501F25C40400ADBD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1C4CB511F25C40400ADBD65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1C4CB571F25C40500ADBD65 /* youtubetestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youtubetestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1C4CB5B1F25C40500ADBD65 /* youtubetestingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = youtubetestingUITests.m; sourceTree = "<group>"; };
-		E1C4CB5D1F25C40500ADBD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C4CB661F25C52F00ADBD65 /* YoutubeStreamingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoutubeStreamingLayer.m; sourceTree = "<group>"; };
+		E1C4CB671F25C52F00ADBD65 /* YoutubeStreamingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoutubeStreamingLayer.h; sourceTree = "<group>"; };
+		EAEAA8A2C4E63C2EEC47686D /* Pods-youtubetesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youtubetesting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-youtubetesting/Pods-youtubetesting.debug.xcconfig"; sourceTree = "<group>"; };
+		ED6D7BA0F41881F35AF16E7A /* libPods-youtubetesting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-youtubetesting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C580BB857E95CD9FD4D0A4 /* libPods-youtubetesting.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +80,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C8D26517BD9093CB62F5C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D7BA0F41881F35AF16E7A /* libPods-youtubetesting.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1C4CB361F25C40400ADBD65 = {
 			isa = PBXGroup;
 			children = (
 				E1C4CB411F25C40400ADBD65 /* youtubetesting */,
-				E1C4CB5A1F25C40500ADBD65 /* youtubetestingUITests */,
 				E1C4CB401F25C40400ADBD65 /* Products */,
+				E15EE6721F2F1238000C821B /* UIControl+YYAdd.h */,
+				E15EE6731F2F1238000C821B /* UIControl+YYAdd.m */,
+				E15EE6741F2F1238000C821B /* UIView+YYAdd.h */,
+				E15EE6751F2F1238000C821B /* UIView+YYAdd.m */,
+				FB6774FAC50062779B9A8592 /* Pods */,
+				6C8D26517BD9093CB62F5C5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,26 +114,34 @@
 		E1C4CB411F25C40400ADBD65 /* youtubetesting */ = {
 			isa = PBXGroup;
 			children = (
+				E15EE6671F2EEA42000C821B /* listViewCOntrollerViewController.h */,
+				E15EE6681F2EEA42000C821B /* listViewCOntrollerViewController.m */,
+				E18D32231F25C72A0097754B /* Main.storyboard */,
+				E15EE66C1F2F11AD000C821B /* LiveViewController.h */,
+				E15EE66D1F2F11AD000C821B /* LiveViewController.m */,
 				E1C4CB421F25C40400ADBD65 /* AppDelegate.h */,
 				E1C4CB431F25C40400ADBD65 /* AppDelegate.m */,
 				E1C4CB451F25C40400ADBD65 /* ViewController.h */,
 				E1C4CB461F25C40400ADBD65 /* ViewController.m */,
-				E1C4CB481F25C40400ADBD65 /* Main.storyboard */,
+				E1C4CB671F25C52F00ADBD65 /* YoutubeStreamingLayer.h */,
+				E1C4CB661F25C52F00ADBD65 /* YoutubeStreamingLayer.m */,
+				E15EE66F1F2F1217000C821B /* LFLivePreview.h */,
+				E15EE6701F2F1217000C821B /* LFLivePreview.m */,
 				E1C4CB4B1F25C40400ADBD65 /* Assets.xcassets */,
-				E1C4CB4D1F25C40400ADBD65 /* LaunchScreen.storyboard */,
 				E1C4CB501F25C40400ADBD65 /* Info.plist */,
 				E1C4CB511F25C40400ADBD65 /* main.m */,
+				E15EE66A1F2EEDCE000C821B /* GoogleService-Info.plist */,
 			);
 			path = youtubetesting;
 			sourceTree = "<group>";
 		};
-		E1C4CB5A1F25C40500ADBD65 /* youtubetestingUITests */ = {
+		FB6774FAC50062779B9A8592 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E1C4CB5B1F25C40500ADBD65 /* youtubetestingUITests.m */,
-				E1C4CB5D1F25C40500ADBD65 /* Info.plist */,
+				EAEAA8A2C4E63C2EEC47686D /* Pods-youtubetesting.debug.xcconfig */,
+				8F913C95A17251A68A172534 /* Pods-youtubetesting.release.xcconfig */,
 			);
-			path = youtubetestingUITests;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1C4CB601F25C40500ADBD65 /* Build configuration list for PBXNativeTarget "youtubetesting" */;
 			buildPhases = (
+				3936499A8B1CC99707535D77 /* [CP] Check Pods Manifest.lock */,
 				E1C4CB3B1F25C40400ADBD65 /* Sources */,
 				E1C4CB3C1F25C40400ADBD65 /* Frameworks */,
 				E1C4CB3D1F25C40400ADBD65 /* Resources */,
+				DBEFCD4C76F02FE1A6435622 /* [CP] Embed Pods Frameworks */,
+				35C57444BBC61A5380C6D28B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,9 +227,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C4CB4F1F25C40400ADBD65 /* LaunchScreen.storyboard in Resources */,
+				E18D32241F25C72A0097754B /* Main.storyboard in Resources */,
+				E15EE66B1F2EEDCE000C821B /* GoogleService-Info.plist in Resources */,
 				E1C4CB4C1F25C40400ADBD65 /* Assets.xcassets in Resources */,
-				E1C4CB4A1F25C40400ADBD65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,13 +242,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35C57444BBC61A5380C6D28B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-youtubetesting/Pods-youtubetesting-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3936499A8B1CC99707535D77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBEFCD4C76F02FE1A6435622 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-youtubetesting/Pods-youtubetesting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1C4CB3B1F25C40400ADBD65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15EE66E1F2F11AD000C821B /* LiveViewController.m in Sources */,
+				E15EE6761F2F1238000C821B /* UIControl+YYAdd.m in Sources */,
 				E1C4CB471F25C40400ADBD65 /* ViewController.m in Sources */,
 				E1C4CB521F25C40400ADBD65 /* main.m in Sources */,
+				E15EE6691F2EEA42000C821B /* listViewCOntrollerViewController.m in Sources */,
+				E15EE6771F2F1238000C821B /* UIView+YYAdd.m in Sources */,
+				E15EE6711F2F1217000C821B /* LFLivePreview.m in Sources */,
+				E1C4CB681F25C52F00ADBD65 /* YoutubeStreamingLayer.m in Sources */,
 				E1C4CB441F25C40400ADBD65 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C4CB5C1F25C40500ADBD65 /* youtubetestingUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,25 +323,6 @@
 			targetProxy = E1C4CB581F25C40500ADBD65 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E1C4CB481F25C40400ADBD65 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1C4CB491F25C40400ADBD65 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E1C4CB4D1F25C40400ADBD65 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1C4CB4E1F25C40400ADBD65 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E1C4CB5E1F25C40500ADBD65 /* Debug */ = {
@@ -353,9 +431,12 @@
 		};
 		E1C4CB611F25C40500ADBD65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAEAA8A2C4E63C2EEC47686D /* Pods-youtubetesting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3N3C88D973;
 				INFOPLIST_FILE = youtubetesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloudium.youtubetesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -365,9 +446,12 @@
 		};
 		E1C4CB621F25C40500ADBD65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F913C95A17251A68A172534 /* Pods-youtubetesting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3N3C88D973;
 				INFOPLIST_FILE = youtubetesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloudium.youtubetesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +502,7 @@
 				E1C4CB621F25C40500ADBD65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1C4CB631F25C40500ADBD65 /* Build configuration list for PBXNativeTarget "youtubetestingUITests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +511,7 @@
 				E1C4CB651F25C40500ADBD65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

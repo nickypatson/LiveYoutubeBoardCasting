@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Google/SignIn.h>
+#import "YoutubeStreamingLayer.h"
+#import "listViewCOntrollerViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<GIDSignInUIDelegate,GIDSignInDelegate>
 
+- (IBAction)createEvent:(id)sender;
+- (IBAction)upcomingEvnets:(id)sender;
+
+@property (weak, nonatomic) IBOutlet GIDSignInButton *signButton;
 
 @end
 

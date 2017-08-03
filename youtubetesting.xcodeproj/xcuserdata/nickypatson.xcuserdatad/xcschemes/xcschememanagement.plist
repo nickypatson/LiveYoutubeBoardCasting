@@ -7,7 +7,20 @@
 		<key>youtubetesting.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E1C4CB3E1F25C40400ADBD65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E1C4CB561F25C40500ADBD65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
