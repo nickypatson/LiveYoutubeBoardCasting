@@ -19,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    NSLog(@"watch live video at https://www.youtube.com/watch?v=%@",_dict[@"id"]);
+    
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
