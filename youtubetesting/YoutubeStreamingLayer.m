@@ -83,7 +83,16 @@ static id extracted() {
     NSDictionary *headers = @{ @"Content-Type": @"application/json",
                                @"Authorization": [NSString stringWithFormat:@"Bearer %@",tokenValue]};
     
-    NSDictionary *parameters = @{ @"snippet": @{ @"title": @"nicky", @"scheduledStartTime":     @"2017-08-02T11:59:15+05:00", @"description": @"dsfsdfs" },
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss"];
+    
+    NSTimeInterval secondsInEightHours = 8 * 60 ;
+    NSDate *dateEightHoursAhead = [[NSDate date] dateByAddingTimeInterval:secondsInEightHours];
+    
+    NSString *dateString = [formatter stringFromDate:dateEightHoursAhead];
+    
+    
+    NSDictionary *parameters = @{ @"snippet": @{ @"title": @"nicky", @"scheduledStartTime":     dateString, @"description": @"dsfsdfs" },
                                   @"status": @{ @"privacyStatus": @"public" } };
     
     NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveBroadcasts?part=id,snippet,contentDetails,status&key=%@",APIKEY];
