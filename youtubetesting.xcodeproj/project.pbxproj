@@ -442,7 +442,7 @@
 				INFOPLIST_FILE = youtubetesting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloudium.youtubetesting;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickypatson.youtubetesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,7 +457,7 @@
 				INFOPLIST_FILE = youtubetesting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloudium.youtubetesting;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickypatson.youtubetesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

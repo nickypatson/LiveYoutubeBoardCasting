@@ -1,9 +1,8 @@
 //
-//  LFLivePreview.h
-//  LFLiveKit
+//  LFLivePreview.m
 //
-//  Created by 倾慕 on 16/5/2.
-//  Copyright © 2016年 live Interactive. All rights reserved.
+//
+//  Created by Nicky on 7/24/17.
 //
 
 #import <UIKit/UIKit.h>

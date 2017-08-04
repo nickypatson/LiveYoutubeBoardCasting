@@ -1,9 +1,8 @@
 //
 //  LFLivePreview.m
-//  LFLiveKit
 //
-//  Created by 倾慕 on 16/5/2.
-//  Copyright © 2016年 live Interactive. All rights reserved.
+//
+//  Created by Nicky on 7/24/17.
 //
 
 //
@@ -59,7 +58,7 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
     AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     switch (status) {
     case AVAuthorizationStatusNotDetermined: {
-        // Диалог Лицензия не появляется, запуск Лицензия
+      
         [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler: ^(BOOL granted) {
                 if (granted) {
                     dispatch_async(dispatch_get_main_queue(), ^{
@@ -70,7 +69,7 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
         break;
     }
     case AVAuthorizationStatusAuthorized: {
-        // Он открыл разрешено продолжать
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             [_self.session setRunning: YES];
         });
@@ -78,7 +77,7 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
     }
     case AVAuthorizationStatusDenied:
     case AVAuthorizationStatusRestricted:
-        // Пользователь явно отказано в разрешении, или не может получить доступ к устройству камеры
+      
         break;
     default:
         break;
@@ -147,9 +146,7 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
 
 - (LFLiveSession *)session {
     if (!_session) {
-        /**      发现大家有不会用横屏的请注意啦，横屏需要在ViewController  supportedInterfaceOrientations修改方向  默认竖屏  ****/
-        /**      发现大家有不会用横屏的请注意啦，横屏需要在ViewController  supportedInterfaceOrientations修改方向  默认竖屏  ****/
-        /**      发现大家有不会用横屏的请注意啦，横屏需要在ViewController  supportedInterfaceOrientations修改方向  默认竖屏  ****/
+
 
 
         /***   Default resolution 368 * 640 Audio: 44.1 iphone6 above 48 dual-channel vertical screen direction ***/
@@ -205,7 +202,7 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
          */
 
 
-        /**    自己定制高质量音频128K 分辨率设置为720*1280 方向竖屏 */
+        /**    128K 720*1280  */
 
         /*
            LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
@@ -227,7 +224,7 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
          */
 
 
-        /**    自己定制高质量音频128K 分辨率设置为720*1280 方向横屏  */
+        /**    128K 720*1280   */
 
         /*
            LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
@@ -252,7 +249,7 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
         _session.showDebugInfo = NO;
         _session.preView = self;
         
-        /*本地存储*/
+       
 //        _session.saveLocalVideo = YES;
 //        NSString *pathToMovie = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/Movie.mp4"];
 //        unlink([pathToMovie UTF8String]); // If a file already exists, AVAssetWriter won't let you record new frames, so delete the old movie
