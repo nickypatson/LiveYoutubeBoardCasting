@@ -148,6 +148,19 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
     if (!_session) {
 
 
+        LFLiveVideoConfiguration *videoConfiguration = [LFLiveVideoConfiguration new];
+        videoConfiguration.videoSize = CGSizeMake(1280, 720);
+        videoConfiguration.videoBitRate = 800*1024;
+        videoConfiguration.videoMaxBitRate = 1000*1024;
+        videoConfiguration.videoMinBitRate = 500*1024;
+        videoConfiguration.videoFrameRate = 24;
+        videoConfiguration.videoMaxKeyframeInterval = 48;
+        videoConfiguration.outputImageOrientation = UIInterfaceOrientationLandscapeLeft;
+        videoConfiguration.autorotate = NO;
+        videoConfiguration.sessionPreset = LFCaptureSessionPreset720x1280;
+        _session = [[LFLiveSession alloc] initWithAudioConfiguration:[LFLiveAudioConfiguration defaultConfiguration] videoConfiguration:videoConfiguration captureType:LFLiveCaptureDefaultMask];
+        
+        
 
         /***   Default resolution 368 * 640 Audio: 44.1 iphone6 above 48 dual-channel vertical screen direction ***/
 //        LFLiveVideoConfiguration *videoConfiguration = [LFLiveVideoConfiguration new];
@@ -173,7 +186,7 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
 //           audioConfiguration.audioSampleRate = LFLiveAudioSampleRate_44100Hz;
         
         
-           _session = [[LFLiveSession alloc] initWithAudioConfiguration:[LFLiveAudioConfiguration defaultConfiguration] videoConfiguration:[LFLiveVideoConfiguration defaultConfiguration]];
+         //  _session = [[LFLiveSession alloc] initWithAudioConfiguration:[LFLiveAudioConfiguration defaultConfiguration] videoConfiguration:[LFLiveVideoConfiguration defaultConfiguration]];
 
         /**    Customize your own high-quality audio 96K */
 
