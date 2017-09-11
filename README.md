@@ -12,10 +12,8 @@ LiveYoutubeStreaming is a framework for creating live broadcasts and video strea
 - Xcode 8
 - Permission to Microphone and Camera.
 - Using 
+  pod 'LFLiveKit' LFLiveKit (https://github.com/LaiFengiOS/LFLiveKit)
 
-  pod 'LFLiveKit'
-
-  pod 'Google/SignIn' 
 
 ## Introduction
 
