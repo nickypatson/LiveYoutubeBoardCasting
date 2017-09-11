@@ -15,6 +15,7 @@ LiveYoutubeStreaming is a framework for creating live broadcasts and video strea
 - Using 
 
   pod 'LFLiveKit'
+
   pod 'Google/SignIn' 
 
 ## Introduction
@@ -52,12 +53,9 @@ then add IOSAPI key from console to  YoutubeStreamingLayer.m
 Nicky Patson
 
 [HomePage](http://about.me/nickypatson)
+
 <mail.nickypatson@gmail.com>
 
-
-## License
-
-GradientSlider is available under the MIT license. See the LICENSE file for more info.
 
 
 

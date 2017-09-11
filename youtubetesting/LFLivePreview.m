@@ -167,11 +167,13 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
 
         /**    Customize your own mono  */
  
-           LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
-           audioConfiguration.numberOfChannels = 1;
-           audioConfiguration.audioBitrate = LFLiveAudioBitRate_64Kbps;
-           audioConfiguration.audioSampleRate = LFLiveAudioSampleRate_44100Hz;
-           _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:[LFLiveVideoConfiguration defaultConfiguration]];
+//           LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
+//           audioConfiguration.numberOfChannels = 1;
+//           audioConfiguration.audioBitrate = LFLiveAudioBitRate_64Kbps;
+//           audioConfiguration.audioSampleRate = LFLiveAudioSampleRate_44100Hz;
+        
+        
+           _session = [[LFLiveSession alloc] initWithAudioConfiguration:[LFLiveAudioConfiguration defaultConfiguration] videoConfiguration:[LFLiveVideoConfiguration defaultConfiguration]];
 
         /**    Customize your own high-quality audio 96K */
 
