@@ -41,8 +41,7 @@ then add IOSAPI key from console to  YoutubeStreamingLayer.m
 - Create BoardCast 
 - Then Click Upcoming events 
 - From there select the event and and press "start live broadcast" .
-- Url will be display in the console.
-- Live Videos can be shown here https://www.youtube.com/my_live_events
+- Url will be display in the console or Live Videos can be shown here https://www.youtube.com/my_live_events
 
 
 ## Author
