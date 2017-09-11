@@ -20,3 +20,10 @@ Then create configuaton file from
 https://developers.google.com/identity/sign-in/ios/start
 
 then add IOSAPI key from console to  YoutubeStreamingLayer.m
+
+
+
+## Instruction to Use
+
+
+- Sign using google account
