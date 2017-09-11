@@ -120,7 +120,7 @@ static id extracted() {
 
     
     NSDictionary *parameters = @{ @"snippet": @{ @"title": @"nicky", @"description": @"dsfsdfs" },
-                                  @"cdn": @{ @"resolution": @"480p", @"frameRate": @"30fps" , @"ingestionType":@"rtmp" }, @"ingestionInfo": @{ @"streamName": @"Nicky" }
+                                  @"cdn": @{ @"resolution": @"720p", @"frameRate": @"60fps" , @"ingestionType":@"rtmp" }, @"ingestionInfo": @{ @"streamName": @"Nicky" }
                                 };
     
     

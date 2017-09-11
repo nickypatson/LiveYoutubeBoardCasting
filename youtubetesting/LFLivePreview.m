@@ -258,8 +258,8 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
            videoConfiguration.landscape = YES;
            videoConfiguration.sessionPreset = LFCaptureSessionPreset720x1280;
 
-           _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:videoConfiguration];
-        */
+           _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:videoConfiguration]; */
+     
 
         _session.delegate = self;
         _session.showDebugInfo = NO;
@@ -273,13 +273,15 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
 //        NSURL *movieURL = [NSURL fileURLWithPath:pathToMovie];
 //        _session.saveLocalVideoPath = movieURL;
         
-        /*
-        UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.alpha = 0.8;
-        imageView.frame = CGRectMake(100, 100, 29, 29);
-        imageView.image = [UIImage imageNamed:@"ios-29x29"];
-        _session.warterMarkView = imageView;*/
-        
+  
+//        UIImageView *imageView = [[UIImageView alloc] init];
+//        imageView.alpha = 0.8;
+//        imageView.frame = CGRectMake(100, 100, 29, 29);
+//        imageView.image = [UIImage imageNamed:@"ios-29x29"];
+//        _session.warterMarkView = imageView;
+//         
+         
+         
     }
     return _session;
 }

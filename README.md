@@ -4,7 +4,7 @@ LiveYoutubeStreaming is a framework for creating live broadcasts and video strea
 
 ## ScreenShots
 
-![Alt text](/ScreenShot3.png?raw=true "Optional Title")
+![Alt text](/ScreenShotSample.png?raw=true "Optional Title")
 
 
 ## Requirements
