@@ -2,9 +2,20 @@
 
 LiveYoutubeStreaming is a framework for creating live broadcasts and video streams on Youtube data API(3.0) in Objective 
 
+## ScreenShots
+
+![Alt text](/ScreenShot2.png?raw=true "Optional Title")
+![Alt text](/ScreenShot3.png?raw=true "Optional Title")
+
+
 ## Requirements
 
 - Xcode 8
+- Permission to Microphone and Camera.
+- Using 
+
+  pod 'LFLiveKit'
+  pod 'Google/SignIn' 
 
 ## Introduction
 
@@ -34,4 +45,20 @@ then add IOSAPI key from console to  YoutubeStreamingLayer.m
 - From there select the event and and press "start live broadcast" .
 - Url will be display in the console.
 - Live Videos can be shown here https://www.youtube.com/my_live_events
+
+
+## Author
+
+Nicky Patson
+
+[HomePage](http://about.me/nickypatson)
+<mail.nickypatson@gmail.com>
+
+
+## License
+
+GradientSlider is available under the MIT license. See the LICENSE file for more info.
+
+
+
 
