@@ -30,7 +30,7 @@ Then create configuaton file from
 
 https://developers.google.com/identity/sign-in/ios/start
 
-then add IOSAPI key from console to  YoutubeStreamingLayer.m
+then add APIKEY from console to  YoutubeStreamingLayer.m
 
 
 
