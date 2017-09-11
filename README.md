@@ -15,6 +15,8 @@ LiveYoutubeStreaming is a framework for creating live broadcasts and video strea
 
 Create google auth2.0 key using console.developer.google.com
 
+![Alt text](/ScreenShot1.png?raw=true "Optional Title")
+
 Then create configuaton file from
 
 https://developers.google.com/identity/sign-in/ios/start
