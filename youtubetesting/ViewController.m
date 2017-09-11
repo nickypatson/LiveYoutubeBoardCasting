@@ -61,7 +61,9 @@ dismissViewController:(UIViewController *)viewController {
 - (void)signIn:(GIDSignIn *)signIn
 didSignInForUser:(GIDGoogleUser *)user
      withError:(NSError *)error {
-                     // For client-side use only!
+
+    
+    // For client-side use only!
     NSString *idToken = user.authentication.accessToken; // Safe to send to the server
     if ([idToken length] >0) {
         [[NSUserDefaults standardUserDefaults] setObject:idToken forKey:@"token"];
@@ -77,7 +79,7 @@ didSignInForUser:(GIDGoogleUser *)user
         NSString *staus;
         
         if (success) {
-            staus = @"success";
+            staus = @"Sucessfully created live broadcast now check upcoming events";
         }else{
             staus = @"failed";
         }

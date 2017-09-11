@@ -41,7 +41,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkp-AO-Re1">
                                 <rect key="frame" x="16" y="236" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create Live events"/>
+                                <state key="normal" title="1.    Create Live events"/>
                                 <connections>
                                     <action selector="createEvent:" destination="QKI-KF-hMQ" eventType="touchUpInside" id="EPX-iW-nzd"/>
                                 </connections>
@@ -49,7 +49,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0F-VO-mkA">
                                 <rect key="frame" x="16" y="318" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Upcoming events"/>
+                                <state key="normal" title="2.    Upcoming events"/>
                                 <connections>
                                     <action selector="upcomingEvnets:" destination="QKI-KF-hMQ" eventType="touchUpInside" id="iD6-R2-NVC"/>
                                 </connections>
@@ -143,39 +143,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bJ-cY-itU">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWJ-MO-2dG">
-                                                <rect key="frame" x="203" y="24" width="44" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="s4M-LY-wu6"/>
-                                                    <constraint firstAttribute="width" constant="44" id="wIf-cX-aeI"/>
-                                                </constraints>
-                                                <state key="normal" image="camra_beauty"/>
-                                                <state key="selected" image="camra_beauty_close"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1A-DT-hPK">
-                                                <rect key="frame" x="262" y="24" width="44" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="BFL-U6-KTb"/>
-                                                    <constraint firstAttribute="width" constant="44" id="PvF-gQ-K72"/>
-                                                </constraints>
-                                                <state key="normal" image="camra_preview"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zz-Du-6fd">
-                                                <rect key="frame" x="319" y="24" width="44" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="44" id="1IK-QG-Gpb"/>
-                                                    <constraint firstAttribute="height" constant="44" id="2YT-Kx-TOg"/>
-                                                </constraints>
-                                                <state key="normal" image="close_preview"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNn-AX-LvM">
-                                                <rect key="frame" x="122.5" y="624" width="129" height="30"/>
+                                                <rect key="frame" x="114" y="624" width="146" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="CoE-Di-mNt"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="17"/>
                                                 <state key="normal" title="Start live broadcast">
-                                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.0" green="0.4431372549" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="liveAction:" destination="QWD-e5-dNs" eventType="touchUpInside" id="bjY-tV-Wef"/>
@@ -193,16 +168,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="V1A-DT-hPK" firstAttribute="top" secondItem="1bJ-cY-itU" secondAttribute="top" constant="24" id="6Ck-Cy-QMN"/>
                                             <constraint firstItem="VNn-AX-LvM" firstAttribute="top" secondItem="lUG-fV-w69" secondAttribute="bottom" constant="8" id="8P2-rY-b78"/>
-                                            <constraint firstItem="9Zz-Du-6fd" firstAttribute="top" secondItem="1bJ-cY-itU" secondAttribute="top" constant="24" id="8Wj-rq-oN6"/>
                                             <constraint firstAttribute="bottom" secondItem="VNn-AX-LvM" secondAttribute="bottom" constant="13" id="G4X-aq-hqv"/>
                                             <constraint firstItem="VNn-AX-LvM" firstAttribute="centerX" secondItem="1bJ-cY-itU" secondAttribute="centerX" id="I7e-Tj-Uae"/>
-                                            <constraint firstAttribute="trailing" secondItem="9Zz-Du-6fd" secondAttribute="trailing" constant="12" id="NDW-02-k3V"/>
-                                            <constraint firstItem="QWJ-MO-2dG" firstAttribute="top" secondItem="1bJ-cY-itU" secondAttribute="top" constant="24" id="cRp-kB-lq1"/>
-                                            <constraint firstItem="9Zz-Du-6fd" firstAttribute="leading" secondItem="V1A-DT-hPK" secondAttribute="trailing" constant="13" id="ftr-Sf-dX3"/>
                                             <constraint firstItem="lUG-fV-w69" firstAttribute="centerX" secondItem="1bJ-cY-itU" secondAttribute="centerX" id="v17-wo-Xbb"/>
-                                            <constraint firstItem="V1A-DT-hPK" firstAttribute="leading" secondItem="QWJ-MO-2dG" secondAttribute="trailing" constant="15" id="wBf-wc-HG1"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -234,10 +203,4 @@
             <point key="canvasLocation" x="1320.8" y="625.63718140929541"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="camra_beauty" width="16" height="16"/>
-        <image name="camra_beauty_close" width="16" height="16"/>
-        <image name="camra_preview" width="16" height="16"/>
-        <image name="close_preview" width="16" height="16"/>
-    </resources>
 </document>

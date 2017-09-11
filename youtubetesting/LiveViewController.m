@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+
     
     NSLog(@"watch live video at https://www.youtube.com/watch?v=%@",_dict[@"id"]);
     
@@ -73,6 +74,13 @@
        
         
     }else{
+        
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:[NSString stringWithFormat:@"watch live video at https://www.youtube.com/watch?v=%@",_dict[@"id"]] preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+        
         [_liveButton setSelected:TRUE];
         [_liveButton setTitle:@"Finish live broadcast" forState:UIControlStateNormal];
         [self startLiveBoarCast];
@@ -115,6 +123,8 @@
         });
         
         if ([broadcastStatus isEqualToString: @"live"] || [broadcastStatus isEqualToString: @"liveStarting"]) {
+            
+
             
             NSLog(@"live now man");
         }else{

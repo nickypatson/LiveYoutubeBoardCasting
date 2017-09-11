@@ -20,8 +20,10 @@
     [super viewDidLoad];
     [[YoutubeStreamingLayer getInstance]  listUpcomingVideosCompletion:^(BOOL success, NSDictionary *dict) {
         
-        value = dict[@"items"];
-        [_tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            value = dict[@"items"];
+            [_tableView reloadData];
+        });
         
     }];
 }

@@ -92,10 +92,10 @@ static id extracted() {
     NSString *dateString = [formatter stringFromDate:dateEightHoursAhead];
     
     
-    NSString *time = [NSString stringWithFormat:@"%@+05:00",dateString];
+    NSString *time = [NSString stringWithFormat:@"%@+00:00",dateString];
     
     
-    NSDictionary *parameters = @{ @"snippet": @{ @"title": @"nicky", @"scheduledStartTime":     time, @"description": @"dsfsdfs" },
+    NSDictionary *parameters = @{ @"snippet": @{ @"title": @"nicky testing", @"scheduledStartTime":     time, @"description": @"dsfsdfs" },
                                   @"status": @{ @"privacyStatus": @"public" } };
     
     NSString *url = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/liveBroadcasts?part=id,snippet,contentDetails,status&key=%@",APIKEY];

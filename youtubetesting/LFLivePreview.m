@@ -150,78 +150,79 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
 
 
         /***   Default resolution 368 * 640 Audio: 44.1 iphone6 above 48 dual-channel vertical screen direction ***/
-        LFLiveVideoConfiguration *videoConfiguration = [LFLiveVideoConfiguration new];
-        videoConfiguration.videoSize = CGSizeMake(1280, 720);
-        videoConfiguration.videoBitRate = 800*1024;
-        videoConfiguration.videoMaxBitRate = 1000*1024;
-        videoConfiguration.videoMinBitRate = 500*1024;
-        videoConfiguration.videoFrameRate = 24;
-        videoConfiguration.videoMaxKeyframeInterval = 48;
-        videoConfiguration.outputImageOrientation = UIInterfaceOrientationLandscapeLeft;
-        videoConfiguration.autorotate = NO;
-        videoConfiguration.sessionPreset = LFCaptureSessionPreset720x1280;
-        _session = [[LFLiveSession alloc] initWithAudioConfiguration:[LFLiveAudioConfiguration defaultConfiguration] videoConfiguration:videoConfiguration captureType:LFLiveCaptureDefaultMask];
+//        LFLiveVideoConfiguration *videoConfiguration = [LFLiveVideoConfiguration new];
+//        videoConfiguration.videoSize = CGSizeMake(1280, 720);
+//        videoConfiguration.videoBitRate = 800*1024;
+//        videoConfiguration.videoMaxBitRate = 1000*1024;
+//        videoConfiguration.videoMinBitRate = 500*1024;
+//        videoConfiguration.videoFrameRate = 24;
+//        videoConfiguration.videoMaxKeyframeInterval = 48;
+//        videoConfiguration.outputImageOrientation = UIInterfaceOrientationLandscapeLeft;
+//        videoConfiguration.autorotate = NO;
+//        videoConfiguration.sessionPreset = LFCaptureSessionPreset720x1280;
+//
+//        _session = [[LFLiveSession alloc] initWithAudioConfiguration:[LFLiveAudioConfiguration defaultConfiguration] videoConfiguration:videoConfiguration captureType:LFLiveCaptureDefaultMask];
+        
+        
 
         /**    Customize your own mono  */
-        /*
+ 
            LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
            audioConfiguration.numberOfChannels = 1;
            audioConfiguration.audioBitrate = LFLiveAudioBitRate_64Kbps;
            audioConfiguration.audioSampleRate = LFLiveAudioSampleRate_44100Hz;
            _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:[LFLiveVideoConfiguration defaultConfiguration]];
-         */
 
         /**    Customize your own high-quality audio 96K */
-        /*
-           LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
-           audioConfiguration.numberOfChannels = 2;
-           audioConfiguration.audioBitrate = LFLiveAudioBitRate_96Kbps;
-           audioConfiguration.audioSampleRate = LFLiveAudioSampleRate_44100Hz;
-           _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:[LFLiveVideoConfiguration defaultConfiguration]];
-         */
+
+//           LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
+//           audioConfiguration.numberOfChannels = 2;
+//           audioConfiguration.audioBitrate = LFLiveAudioBitRate_96Kbps;
+//           audioConfiguration.audioSampleRate = LFLiveAudioSampleRate_44100Hz;
+//           _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:[LFLiveVideoConfiguration defaultConfiguration]];
+      
 
         /**    Own custom high-quality audio 96K resolution set to 540 * 960 direction vertical screen */
 
-        /*
-           LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
-           audioConfiguration.numberOfChannels = 2;
-           audioConfiguration.audioBitrate = LFLiveAudioBitRate_96Kbps;
-           audioConfiguration.audioSampleRate = LFLiveAudioSampleRate_44100Hz;
-
-           LFLiveVideoConfiguration *videoConfiguration = [LFLiveVideoConfiguration new];
-           videoConfiguration.videoSize = CGSizeMake(540, 960);
-           videoConfiguration.videoBitRate = 800*1024;
-           videoConfiguration.videoMaxBitRate = 1000*1024;
-           videoConfiguration.videoMinBitRate = 500*1024;
-           videoConfiguration.videoFrameRate = 24;
-           videoConfiguration.videoMaxKeyframeInterval = 48;
-           videoConfiguration.orientation = UIInterfaceOrientationPortrait;
-           videoConfiguration.sessionPreset = LFCaptureSessionPreset540x960;
-
-           _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:videoConfiguration];
-         */
+        
+//           LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
+//           audioConfiguration.numberOfChannels = 2;
+//           audioConfiguration.audioBitrate = LFLiveAudioBitRate_96Kbps;
+//           audioConfiguration.audioSampleRate = LFLiveAudioSampleRate_44100Hz;
+//
+//           LFLiveVideoConfiguration *videoConfiguration = [LFLiveVideoConfiguration new];
+//           videoConfiguration.videoSize = CGSizeMake(540, 960);
+//           videoConfiguration.videoBitRate = 800*1024;
+//           videoConfiguration.videoMaxBitRate = 1000*1024;
+//           videoConfiguration.videoMinBitRate = 500*1024;
+//           videoConfiguration.videoFrameRate = 24;
+//           videoConfiguration.videoMaxKeyframeInterval = 48;
+//           videoConfiguration.sessionPreset = LFCaptureSessionPreset540x960;
+//
+//           _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:videoConfiguration];
+        
 
 
         /**    128K 720*1280  */
 
-        /*
-           LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
-           audioConfiguration.numberOfChannels = 2;
-           audioConfiguration.audioBitrate = LFLiveAudioBitRate_128Kbps;
-           audioConfiguration.audioSampleRate = LFLiveAudioSampleRate_44100Hz;
-
-           LFLiveVideoConfiguration *videoConfiguration = [LFLiveVideoConfiguration new];
-           videoConfiguration.videoSize = CGSizeMake(720, 1280);
-           videoConfiguration.videoBitRate = 800*1024;
-           videoConfiguration.videoMaxBitRate = 1000*1024;
-           videoConfiguration.videoMinBitRate = 500*1024;
-           videoConfiguration.videoFrameRate = 15;
-           videoConfiguration.videoMaxKeyframeInterval = 30;
-           videoConfiguration.landscape = NO;
-           videoConfiguration.sessionPreset = LFCaptureSessionPreset360x640;
-
-           _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:videoConfiguration];
-         */
+      
+//           LFLiveAudioConfiguration *audioConfiguration = [LFLiveAudioConfiguration new];
+//           audioConfiguration.numberOfChannels = 2;
+//           audioConfiguration.audioBitrate = LFLiveAudioBitRate_128Kbps;
+//           audioConfiguration.audioSampleRate = LFLiveAudioSampleRate_44100Hz;
+//
+//           LFLiveVideoConfiguration *videoConfiguration = [LFLiveVideoConfiguration new];
+//           videoConfiguration.videoSize = CGSizeMake(720, 1280);
+//           videoConfiguration.videoBitRate = 800*1024;
+//           videoConfiguration.videoMaxBitRate = 1000*1024;
+//           videoConfiguration.videoMinBitRate = 500*1024;
+//           videoConfiguration.videoFrameRate = 15;
+//           videoConfiguration.videoMaxKeyframeInterval = 30;
+//           //videoConfiguration.landscape = YES;
+//           videoConfiguration.sessionPreset = LFCaptureSessionPreset360x640;
+//
+//           _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:videoConfiguration];
+        
 
 
         /**    128K 720*1280   */
@@ -248,6 +249,7 @@ inline static NSString* formatedSpeed(float bytes, float elapsed_milli) {
         _session.delegate = self;
         _session.showDebugInfo = NO;
         _session.preView = self;
+        _session.captureDevicePosition = AVCaptureDevicePositionBack;
         
        
 //        _session.saveLocalVideo = YES;
