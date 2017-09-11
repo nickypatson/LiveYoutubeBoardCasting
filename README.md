@@ -15,6 +15,8 @@ LiveYoutubeStreaming is a framework for creating live broadcasts and video strea
 
 Create google auth2.0 key using console.developer.google.com
 
+![Alt text](/ScreenShot1.png?raw=true "Optional Title")
+
 Then create configuaton file from
 
 https://developers.google.com/identity/sign-in/ios/start
@@ -25,5 +27,11 @@ then add IOSAPI key from console to  YoutubeStreamingLayer.m
 
 ## Instruction to Use
 
-
+- "Enable Live Streaming" from this url https://www.youtube.com/my_live_events
 - Sign using google account
+- Create BoardCast 
+- Then Click Upcoming events 
+- From there select the event and and press "start live broadcast" .
+- Url will be display in the console.
+- Live Videos can be shown here https://www.youtube.com/my_live_events
+
