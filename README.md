@@ -43,6 +43,9 @@ then add APIKEY from console to  YoutubeStreamingLayer.m
 - From there select the event and and press "start live broadcast" .
 - Url will be display in the console or Live Videos can be shown here https://www.youtube.com/my_live_events
 
+## More Reference
+
+https://developers.google.com/youtube/v3/
 
 ## Author
 
