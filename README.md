@@ -1,6 +1,6 @@
 # LiveYoutubeBoardCasting
 
-LiveYoutubeBoardCasting is a framework for creating live broadcasts and video streams on Youtube data API(3.0) in Objective 
+LiveYoutubeBoardCasting is a framework for creating live broadcasts and video streams on Youtube data API(3.0) in Objective C
 
 ## ScreenShots
 
