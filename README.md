@@ -6,7 +6,6 @@ LiveYoutubeBoardCasting is a framework for creating live broadcasts and video st
 
 ![Alt text](/ScreenShotSample.png?raw=true "Optional Title")
 
-
 ## Requirements
 
 - Xcode 8
