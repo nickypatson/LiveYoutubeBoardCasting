@@ -4,7 +4,7 @@ LiveYoutubeBoardCasting is a framework for creating live broadcasts and video st
 
 ## ScreenShots
 
-![Alt text](/ScreenShotSample.png?raw=true "Optional Title")
+![Alt text](/ScreenShot.png?raw=true "Optional Title")
 
 ## Requirements
 
